@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gentallela Alela! | </title>
+  <title>Reveelz </title>
 
   <!-- Bootstrap core CSS -->
 
@@ -18,7 +18,7 @@
   <link href="css/animate.min.css" rel="stylesheet">
 
   <!-- Custom styling plus plugins -->
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/custom-2.css" rel="stylesheet">
   <link href="css/icheck/flat/green.css" rel="stylesheet">
 
 
@@ -42,40 +42,47 @@
     <a class="hiddenanchor" id="toregister"></a>
     <a class="hiddenanchor" id="tologin"></a>
 
-    <div id="wrapper">
-      <div id="login" class="animate form">
-        <section class="login_content">
-          <form>
-            <h1>Login Form</h1>
-			<div>
-				
-			<a href="https://www.facebook.com/login.php?login_attempt=1&lwv=110" class="btn btn-block btn-social btn-facebook" style="background-color:#3B5998;color:#FFFFFF;" onclick="">
-            <span class="fa fa-facebook"></span> Sign in with Facebook
-			</a>
-			</div>
-			<br>
-			<h5>OR</h5>
-            <div>
-              <input type="text" class="form-control" placeholder="Username" required="" />
-            </div>
-            <div>
-              <input type="password" class="form-control" placeholder="Password" required="" />
-            </div>
-            <div>
-              <a class="btn btn-default submit" href="creatUser.html">Log in</a>
-              
-            </div>
-            <div class="clearfix"></div>
-           
-          </form>
-          <!-- form -->
-        </section>
-        <!-- content -->
-      </div>
+   
+      <div class="container">
+        <div class="card card-container">
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <img id="profile-img" class="profile-img-card" src="images/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button id="login" class="btn btn-lg btn-primary btn-block btn-signin" type="button">Sign in</button>
+            </form><!-- /form -->
+            <!-- <a href="#" class="forgot-password">
+                Forgot the password?
+            </a> -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
       
     </div>
-  </div>
+ 
 
 </body>
-
+<script>
+$("#login").click(function(){
+var email=$("#inputEmail").val();
+var password=$("#inputPassword").val();
+//alert("hello")
+if((email=="admin")&&(password=="admin")){
+window.location="createPublisher.html"
+}
+<!-- else if((email=="publisher")&&(password="publisher")){
+<!-- window.location="publisherdashboard.html"
+<!-- } --> --> -->
+else{
+window.location="publisherdashboard.html"
+}
+});
+</script>
 </html>
