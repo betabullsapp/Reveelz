@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gentellela Alela! | </title>
+  <title>Reveelz </title>
 
   <!-- Bootstrap core CSS -->
 
@@ -55,7 +55,7 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Reveelz</span></a>
           </div>
           <div class="clearfix"></div>
 
@@ -82,11 +82,10 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                   <li><a href="creatUser.html">Create User</a>
+                   
+                   <li><a href="createPublisher.html">Create Publisher</a>
                     </li>
-                    <li><a href="manageUsers.html">Manage User</a>
-                    </li>
-                    <li><a href="createPublisher.html">Create Publisher</a>
+					<li><a href="managePublisher.html">Manage Publishers</a>
                     </li>
 					<li><a href="creatAdURL.html">Create Ad</a>
                     </li>
@@ -262,6 +261,13 @@
                       </div>
                     </div>
                     <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Middle Name 
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="middle-name" name="last-name"   placeholder="Middle Name"class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+					 <div class="form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name 
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -269,10 +275,10 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Email<span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">User Name<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="Email" name="last-name" required="required"  placeholder="Email"class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="username" name="user-name" required="required"  placeholder="User Name"class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
 					<div class="form-group">
@@ -290,7 +296,13 @@
                       </div>
                     </div>
 					
-                    
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Address">Address
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="Address" id="Address" required="required" placeholder="Address" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
 					
 					<div class="form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Phone
@@ -329,13 +341,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-          <div class="copyright-info">
-            <p class="pull-right">Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-            </p>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
+       
         <!-- /footer content -->
 
       </div>

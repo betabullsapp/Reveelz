@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gentellela Alela! | </title>
+  <title>Reveelz </title>
 
   <!-- Bootstrap core CSS -->
 
@@ -55,7 +55,7 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Reveelz </span></a>
           </div>
           <div class="clearfix"></div>
 
@@ -82,15 +82,11 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="creatUser.html">Create User</a>
+                    <li><a href="publisherdashboard.html">Dashboard</a>
                     </li>
-                    <li><a href="manageUsers.html">Manage User</a>
+					<li><a href="createAdURLPublisher.html">Create Ad</a>
                     </li>
-                    <li><a href="createPublisher.html">Create Publisher</a>
-                    </li>
-					<li><a href="creatAdURL.html">Create Ad</a>
-                    </li>
-					<li><a href="manageURLS.html">Manage Ads</a>
+					<li><a href="manageURLSPublisher.html">Manage Ads</a>
                     </li>
                   </ul>
                 </li>
@@ -231,13 +227,13 @@
       </div>
       <!-- /top navigation -->
 
-      <!-- page content -->
+     <!-- page content -->
       <div class="right_col" role="main">
         <div class="">
 
           <div class="page-title">
             <div class="title_left">
-              <h3>Create User</h3>
+              <h3>Create Ad</h3>
             </div>
            
           </div>
@@ -246,7 +242,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>User Details</h2>
+                  <h2>Ad Details</h2>
                  
                   <div class="clearfix"></div>
                 </div>
@@ -255,56 +251,40 @@
                   <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                     <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ad Title 
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="first-name" required="required" placeholder="First Name" class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="Ad Title"  placeholder="Ad Title" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                   
+					
+					<div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ad URL<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="last-name" name="last-name" required="required"  placeholder="Last Name"class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" placeholder="Middle Name" name="middle-name">
+                        <input type="text" id="Ad URL" required="required" placeholder="Ad URL" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
 					<div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Address <span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Income Group<span class="required">*</span>
                       </label>
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="Address" name="last-name" required="required" placeholder="Address"class="form-control col-md-7 col-xs-12">
-                      </div>
-					   
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="City" name="last-name" required="required"  placeholder="City" class="form-control col-md-7 col-xs-12">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="Income Group" required="required" placeholder="Income Group" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
 					<div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Zip<span class="required">*</span>
                       </label>
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="State" name="last-name" required="required"  placeholder="State"class="form-control col-md-7 col-xs-12">
-                      </div>
-					   
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="County" name="last-name" required="required"  placeholder="County"class="form-control col-md-7 col-xs-12">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="Number" id="Zip" required="required" placeholder="Zip" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
 					<div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Zip4<span class="required">*</span>
                       </label>
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="Zip" name="last-name" required="required" placeholder="zip" class="form-control col-md-7 col-xs-12">
-                      </div>
-					   
-                      <div class="col-md-3 col-sm-3 col-xs-12">
-                        <input type="text" id="Zip4" name="last-name" required="required"  placeholder="zip4" class="form-control col-md-7 col-xs-12">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="Zip4" required="required" placeholder="Zip4" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
 					
@@ -321,31 +301,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Age 
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input class="form-control col-md-7 col-xs-12" id="Age" required="required" placeholder="Age" type="text">
-                      </div>
-                    </div>
-					<div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Marital Status <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                         <select class="form-control">
-                          <option>Choose option</option>
-                          <option>Single</option>
-                          <option>Married</option>
-                        </select>                      
-					  </div>
-                    </div>
-					<div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Phone<span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="Number" id="Phone" required="required" placeholder="Phone" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
+                    
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -376,13 +332,13 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
+       <!--  <footer>
           <div class="copyright-info">
             <p class="pull-right">Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
             </p>
           </div>
           <div class="clearfix"></div>
-        </footer>
+        </footer> -->
         <!-- /footer content -->
 
       </div>

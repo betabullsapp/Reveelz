@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gentellela Alela! | </title>
+  <title>Reveelz </title>
 
   <!-- Bootstrap core CSS -->
 
@@ -55,7 +55,7 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Reveelz</span></a>
           </div>
           <div class="clearfix"></div>
 
@@ -82,11 +82,9 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                   <li><a href="creatUser.html">Create User</a>
+                   <li><a href="createPublisher.html">Create Publisher</a>
                     </li>
-                    <li><a href="manageUsers.html">Manage User</a>
-                    </li>
-                    <li><a href="createPublisher.html">Create Publisher</a>
+					<li><a href="managePublisher.html">Manage Publishers</a>
                     </li>
 					<li><a href="creatAdURL.html">Create Ad</a>
                     </li>
@@ -232,71 +230,82 @@
       <!-- /top navigation -->
 
       <!-- page content -->
-      <div class="right_col" role="main">
+			<div class="right_col" role="main">
         <div class="">
 
           <div class="page-title">
             <div class="title_left">
               <h3>Manage Ads</h3>
             </div>
-			 
+              <a type="button" href="creatAdURL.html"style="float:right;background:rgba(52, 73, 94, 0.94);"class="btn btn-primary">Create Ad</a>
           </div>
           <div class="clearfix"></div>
-          <div class="row">
-		  <div class="col-md-2 col-sm-2 col-xs-2">
-		  </div>
-          <div class="col-md-8 col-sm-8 col-xs-8">
+				 <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
-                <div class="x_title">
-                  <h2>http://www.monster.com</h2>
-                 
-                  <div class="clearfix"></div>
-                </div>
+                
+
                 <div class="x_content">
-                  <br />
-                  <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-					<div class="col-md-8">
-					  <h2>monster india</h2>
-					</div>
-                    <div class="col-md-4">
-					  <a href=""><span class="icon"><i class="fa fa-edit"></i>
-                        </span>Edit</a>&nbsp&nbsp&nbsp&nbsp
-						<a href=""><span class="icon"><i class="fa fa-remove"></i>
-                        </span>Delete</a>
-                    </div>
-					</form>
+
+                
+
+                  <table class="table table-striped responsive-utilities jambo_table bulk_action">
+                    <thead>
+                      <tr class="headings">
+                        
+                        <th class="column-title">Ad Title</th>
+                        <th class="column-title">Ad URL </th>
+                        <th class="column-title">Income Group</th>
+                        <th class="column-title">Zip</th>
+                      
+                       
+                        <th class="column-title no-link last"><span class="nobr">Action</span>
+                        </th>
+                        <th class="bulk-actions" colspan="7">
+                          <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr class="even pointer">
+                        
+                        <td class=" ">Ensure</td>
+                        <td class=" ">http://www.ensure.com </td>
+                       
+                        <td class=" ">30,000$</td>
+                        <td class=" ">234561</td>
+                       
+                        <td class=" last"><a href="" title="Edit"><i class="fa fa-edit"></i>
+                        </a>&nbsp
+						<a href="" title="Delete"><i class="fa fa-trash"></i>
+                        </a>
+                        </td
+                      </tr>
+					   <tr class="even pointer">
+                        
+                        <td class=" ">Flipkart</td>
+                        
+                        <td class=" ">http://www.flipkart.com</td>
+                        <td class=" ">50,000$</td>
+                        <td class=" ">036123</td>
+                       
+                        <td class=" last"><a href="" title="Edit"><i class="fa fa-edit"></i>
+                        </a>&nbsp
+						<a href="" title="Delete"><i class="fa fa-trash"></i>
+                        </a>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+
+                  </table>
                 </div>
               </div>
             </div>
           </div>
-		  <div class="row">
-		  <div class="col-md-2 col-sm-2 col-xs-2">
-		  </div>
-          <div class="col-md-8 col-sm-8 col-xs-8">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>http://www.naukri.com</h2>
-                 
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <br />
-                  <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-					<div class="col-md-8">
-					  <h2>Naukri management</h2>
-					</div>
-                    <div class="col-md-4">
-					  <a href=""><span class="icon"><i class="fa fa-edit"></i>
-                        </span>Edit</a>&nbsp&nbsp&nbsp&nbsp
-						<a href=""><span class="icon"><i class="fa fa-remove"></i>
-                        </span>Delete</a>
-                    </div>
-					</form>
-                </div>
-              </div>
-            </div>
+
           </div>
-		  
+			
 
           <script type="text/javascript">
             $(document).ready(function() {
@@ -314,13 +323,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-          <div class="copyright-info">
-           <!--  <p class="pull-right">Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-            </p> -->
-          </div>
-          <div class="clearfix"></div>
-        </footer>
+       
         <!-- /footer content -->
 
       </div>
